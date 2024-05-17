@@ -6,7 +6,7 @@ jobs:
   steps:
    - uses: actions/checkout@v2
    - name: Executando o STEP1
-   trun: |
+   run: |
     echo Esse processo carrega uma mensagem
     echo basica para entender o workflow
 
