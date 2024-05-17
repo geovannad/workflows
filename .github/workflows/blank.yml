@@ -1,11 +1,12 @@
-on: [push]
+ on: [push]  # This triggers the workflow to run on every push to the repository
 jobs:
- build:
- name: PrimeroJob
- runs-on: ubuntu-latest
- steps:
- - uses: actions/checkout@v2
- - name: Executando o STEP1
- run: |
- echo Esse processo carrega uma mensagem
- echo basica para entender o workflow
+  build:
+    name: PrimeroJob  # Name of the job
+    runs-on: ubuntu-latest  # The job runs on the latest version of Ubuntu
+    steps:
+      - uses: actions/checkout@v2  # This step checks out the repository's code using the actions/checkout action version 2
+      - name: Executando o STEP1  # Name of the next step
+        run: |
+          echo Esse processo carrega uma mensagem  # Prints the message to the console
+          echo basica para entender o workflow  # Prints the continuation of the message
+
