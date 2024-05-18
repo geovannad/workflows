@@ -1,6 +1,6 @@
 on: [push]
 jobs:
- build:
+  build:
   name: PrimeroJob
   runs-on: ubuntu-latest
   steps:
@@ -8,5 +8,5 @@ jobs:
    - name: Executando o STEP1
     run : |
       echo Esse processo carrega uma mensagem
-    echo basica para entender o workflow
+      echo basica para entender o workflow
 
