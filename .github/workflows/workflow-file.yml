@@ -1,7 +1,7 @@
 on: 
   push:
-    branches: ["main"]
-    
+    branches: ["qa"]
+
 jobs:
   build:
     name: PrimeroJob
@@ -10,5 +10,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: Executando o STEP1
       run: |
-        echo Esse processo carrega uma mensagem
+        echo Esse processo carrega uma mensagem ESTOU NA QA
         echo basica para entender o workflow
